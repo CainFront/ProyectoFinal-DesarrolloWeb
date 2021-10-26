@@ -1,0 +1,200 @@
+@import "colors";
+@import "responsive";
+
+// hero section index
+
+.HeroIndex {
+  width: 100%;
+  background-color: $verde;
+}
+
+.indexIzq {
+  background-color: $verde;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  &__titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    @include desktop-up(md) {
+      padding-top: 3rem;
+    }
+  }
+  &__parrafo {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.664);
+  }
+  &__boton {
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: 1.2rem;
+    color: $verde;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  &__boton:hover {
+    color: white;
+    background-color: $verde;
+    border: 2px solid white;
+  }
+}
+
+.indexDer {
+  background-color: $verde;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__foto {
+    width: 68.8%; //width para tacho es 34.5, y zanahoria 68.8
+  }
+}
+
+// cards index
+
+.tituloNoticias {
+  font-size: 3rem;
+  color: $carrotInt;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem;
+  text-decoration: underline;
+}
+
+.noticias {
+  background-color: $carrotInt;
+  border: 3px solid $carrot;
+  margin: auto;
+  border-radius: 7px;
+  height: 24rem;
+  &__texto {
+    color: white;
+    text-align: center;
+    margin: 1rem;
+  }
+}
+
+// equipo index
+
+.equipoTitulo {
+  font-size: 3rem;
+  color: rgb(110, 110, 110);
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem;
+  text-decoration: underline;
+}
+
+.fondo {
+  background-color: rgb(219, 219, 219);
+  &Img {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.equipo {
+  border: none;
+  border-radius: 13px;
+  padding: 0px;
+  height: 400px;
+  position: relative;
+  &__info {
+    width: 200px;
+    height: 50px /400px * 100%;
+    position: absolute;
+    bottom: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+    background-color: $verde + rgb(52, 52, 52);
+    &_infoIcons {
+      width: 60px /200px * 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #2b755f;
+      border-radius: 50%;
+      bottom: 0px;
+      right: 23px;
+      position: relative;
+    }
+    &__infoName {
+      font-size: 1rem;
+    }
+    &__infoDesignation {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+// shock index
+
+.heroBanner {
+  margin-bottom: 5rem;
+  &__uno {
+    &Img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__dos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &Titulo {
+      font-size: 3rem;
+      overflow-y: hidden;
+      color: $verde;
+      font-weight: bold;
+      text-align: center;
+      padding: 2rem;
+      text-decoration: underline;
+    }
+    &Parrafo {
+      font-size: 1.5rem;
+      text-align: center;
+      color: rgba(56, 56, 56, 0.84);
+    }
+    &Btn {
+      border: 1px solid gray;
+      position: relative;
+      overflow: hidden;
+      z-index: 9;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: $verde;
+      padding: 10px;
+      border-radius: 10px;
+      &:hover {
+        color: white;
+      }
+      &:before {
+        content: "";
+        width: 4px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        -webkit-transition: all 0.5s ease-in-out 0s;
+        -moz-transition: all 0.5s ease-in-out 0s;
+        -ms-transition: all 0.5s ease-in-out 0s;
+        -o-transition: all 0.5s ease-in-out 0s;
+        transition: all 0.5s ease-in-out 0s;
+      }
+      &:hover::before {
+        width: 100%;
+        background-color: $verde;
+      }
+    }
+  }
+}

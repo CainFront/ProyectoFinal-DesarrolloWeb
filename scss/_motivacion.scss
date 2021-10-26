@@ -1,0 +1,168 @@
+@import "responsive";
+
+// Slider - Hero
+
+.heroMotivacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &--h3 {
+    color: $verde;
+    font-weight: bold;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    @include desktop-up(md) {
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+    }
+  }
+  &--text {
+    font-size: 1.5rem;
+    color: rgba(56, 56, 56, 0.84);
+    margin: auto;
+    width: 85%;
+    @include desktop-up(md) {
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+// Cards motivacion
+
+.mainMotivacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.motivacionTitulo {
+  width: 90%;
+  height: 10%;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+.motivacionTitulo h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10px;
+  color: $verde;
+  font-weight: bold;
+}
+
+.motivacionTop {
+  width: 90%;
+  height: 30%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  @include desktop-up(md) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.motivacionMedium {
+  width: 90%;
+  height: 30%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  @include desktop-up(md) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.motivacionLow {
+  width: 90%;
+  height: 30%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  @include desktop-up(md) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.cajaMotivacion {
+  width: 45%;
+  height: 35vh;
+  margin: 2rem;
+  border-radius: 10px;
+  @include desktop-up(md) {
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    margin-bottom: 2rem;
+    overflow-y: hidden;
+  }
+  @include desktop-up(sm) {
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+    margin-bottom: 2rem;
+    overflow-y: hidden;
+  }
+}
+
+.botonMotivacion {
+  padding: 0 20px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  position: relative;
+  top: 35%;
+  left: 75%;
+  background-color: $verde;
+  color: white;
+  font-weight: 800;
+  font-size: 3rem;
+  text-decoration: none;
+  &:hover {
+    color: $verde;
+    background-color: white;
+  }
+}
+
+/* las siguientes clases son imagenes de motivacion */
+
+.moti1 {
+  background-image: url(../img/motivacion/moti1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.moti2 {
+  background-image: url(../img/motivacion/moti2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.moti3 {
+  background-image: url(../img/motivacion/moti3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.moti4 {
+  background-image: url(../img/motivacion/moti4.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.moti5 {
+  background-image: url(../img/motivacion/moti5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.moti6 {
+  background-image: url(../img/motivacion/moti6.jpg);
+  background-size: cover;
+  background-position: center;
+}

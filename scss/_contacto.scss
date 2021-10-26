@@ -1,0 +1,53 @@
+// contacto
+@import "responsive";
+
+.mainContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+}
+
+.mainContacto form {
+  border: 3px solid $verde;
+  width: 40%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 7px;
+  background-color: white;
+
+  @include desktop-up(md) {
+    width: 70%;
+  }
+  @include desktop-up(sm) {
+    width: 100%;
+  }
+}
+
+.mainContacto form h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+label {
+  padding: 5px;
+}
+
+#enviar {
+  padding: 5px;
+  background-color: #5ffbf1;
+  color: black;
+  font-size: 1.25rem;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  min-width: 100%;
+  max-width: 100%;
+  color: black;
+}

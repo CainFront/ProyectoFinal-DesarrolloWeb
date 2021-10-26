@@ -1,0 +1,59 @@
+// error 404
+
+.error {
+  background-color: rgba(255, 255, 255, 0.685);
+  display: grid;
+  grid-area: "img img img" "text text text" "btn btn btn" "chiste chiste chiste";
+  overflow-y: hidden;
+}
+
+.container__Img {
+  grid-area: "img";
+  width: 100%;
+  height: 40%;
+  margin-top: 0;
+  overflow-y: hidden;
+}
+
+.container__text {
+  grid-area: "img";
+  width: 100%;
+  height: 15%;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  font-variant: small-caps;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-shadow: $verde 1px 1px;
+  background-image: url(../img/404/tierra.png);
+  background-size: cover;
+}
+
+.container__Boton {
+  grid-area: "btn";
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &Uno:hover {
+    color: $verde;
+    background-color: white;
+    border: 3px solid $verde;
+  }
+  &Dos:hover {
+    color: #5bc0de;
+    background-color: white;
+    border: 3px solid #5bc0de;
+  }
+}
+
+.container__chiste {
+  display: flex;
+  justify-content: center;
+  transform: scale(2);
+  margin-top: 3rem;
+}

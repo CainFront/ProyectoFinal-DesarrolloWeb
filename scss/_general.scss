@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import "colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+.custom-toggler {
+  border-color: $verde;
+  background-image: url(../img/inicio/toggler.png);
+  background-size: cover;
+  background-position: center;
+}

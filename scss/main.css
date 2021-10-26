@@ -1,0 +1,911 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+.custom-toggler {
+  border-color: #008f39;
+  background-image: url(../img/inicio/toggler.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.navbar-brand img {
+  width: 50px;
+}
+
+.navbar .nav-link {
+  color: black;
+}
+
+.navbar .nav-link:hover {
+  color: #008f39;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #008f39;
+  text-align: center;
+  color: white;
+  margin: auto;
+}
+
+.footer__sectionBtn {
+  margin: 1rem;
+}
+
+.HeroIndex {
+  width: 100%;
+  background-color: #008f39;
+}
+
+.indexIzq {
+  background-color: #008f39;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.indexIzq__titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .indexIzq__titulo {
+    padding-top: 3rem;
+  }
+}
+
+.indexIzq__parrafo {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.664);
+}
+
+.indexIzq__boton {
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: 1.2rem;
+  color: #008f39;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.indexIzq__boton:hover {
+  color: white;
+  background-color: #008f39;
+  border: 2px solid white;
+}
+
+.indexDer {
+  background-color: #008f39;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.indexDer__foto {
+  width: 68.8%;
+}
+
+.tituloNoticias {
+  font-size: 3rem;
+  color: #ed7c37;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem;
+  text-decoration: underline;
+}
+
+.noticias {
+  background-color: #ed7c37;
+  border: 3px solid #e26024;
+  margin: auto;
+  border-radius: 7px;
+  height: 24rem;
+}
+
+.noticias__texto {
+  color: white;
+  text-align: center;
+  margin: 1rem;
+}
+
+.equipoTitulo {
+  font-size: 3rem;
+  color: #6e6e6e;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem;
+  text-decoration: underline;
+}
+
+.fondo {
+  background-color: #dbdbdb;
+}
+
+.fondoImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.equipo {
+  border: none;
+  border-radius: 13px;
+  padding: 0px;
+  height: 400px;
+  position: relative;
+}
+
+.equipo__info {
+  width: 200px;
+  height: 12.5%;
+  position: absolute;
+  bottom: 15px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: hidden;
+  background-color: #34c36d;
+}
+
+.equipo__info_infoIcons {
+  width: 30%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2b755f;
+  border-radius: 50%;
+  bottom: 0px;
+  right: 23px;
+  position: relative;
+}
+
+.equipo__info__infoName {
+  font-size: 1rem;
+}
+
+.equipo__info__infoDesignation {
+  font-size: 0.7rem;
+}
+
+.heroBanner {
+  margin-bottom: 5rem;
+}
+
+.heroBanner__unoImg {
+  width: 100%;
+  height: auto;
+}
+
+.heroBanner__dos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heroBanner__dosTitulo {
+  font-size: 3rem;
+  overflow-y: hidden;
+  color: #008f39;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem;
+  text-decoration: underline;
+}
+
+.heroBanner__dosParrafo {
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgba(56, 56, 56, 0.84);
+}
+
+.heroBanner__dosBtn {
+  border: 1px solid gray;
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #008f39;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.heroBanner__dosBtn:hover {
+  color: white;
+}
+
+.heroBanner__dosBtn:before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.heroBanner__dosBtn:hover::before {
+  width: 100%;
+  background-color: #008f39;
+}
+
+.funcionamientoBG {
+  background-color: #008f39;
+}
+
+.luchamos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.luchamos__text {
+  font-size: 2.5rem;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .luchamos__text {
+    padding-top: 3rem;
+  }
+}
+
+.luchamos__cero {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ed7c37;
+  text-shadow: 2px 2px #5a5a5a;
+}
+
+.luchamos__scroll {
+  width: 3rem;
+  margin-top: 1.5rem;
+}
+
+.heroSec {
+  margin: auto;
+  margin: 6rem 0 8rem 0;
+}
+
+.heroSec__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.heroSec__text--h3 {
+  color: #008f39;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.heroSec__text--p {
+  font-size: 1.2rem;
+}
+
+.heroSec__text--p a {
+  text-decoration: none;
+  color: #008f39;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.faqs__h2 {
+  font-size: 3rem;
+  color: #008f39;
+  font-weight: bold;
+  text-align: center;
+}
+
+.faqs__line {
+  background-color: #008f39;
+  width: 80%;
+  margin: auto;
+  height: 2px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.pregunta {
+  margin: auto;
+  margin-top: 2rem;
+  width: 90%;
+}
+
+.preguntaTittle {
+  color: #008f39;
+  margin-bottom: 0.8rem;
+}
+
+.descargaText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0rem !important;
+}
+
+.descargaText--h2 {
+  color: #008f39;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .descargaText--h2 {
+    padding-top: 3rem;
+  }
+}
+
+.descargaText--text {
+  font-size: 1.5rem;
+  color: rgba(56, 56, 56, 0.84);
+}
+
+.descargaBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .descargaBtn {
+    padding-bottom: 2rem;
+  }
+}
+
+.descargaBtn--app {
+  border: 2px solid #1aa5f8;
+  background-color: #1aa5f8;
+  color: white;
+  font-variant: small-caps;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.descargaBtn--app:hover {
+  border: 2px solid #1aa5f8;
+  background-color: white;
+  color: #1aa5f8;
+}
+
+.descargaBtn--play {
+  border: 2px solid #a4c639;
+  background-color: #a4c639;
+  color: white;
+  font-variant: small-caps;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 1rem;
+}
+
+.descargaBtn--play:hover {
+  border: 2px solid #a4c639;
+  background-color: white;
+  color: #a4c639;
+}
+
+.tablaPrecio {
+  margin-top: 5rem;
+}
+
+.tablaPrecio__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tablaPrecio__rowUno {
+  overflow: hidden;
+}
+
+.tablaPrecio__rowDos {
+  overflow: hidden;
+}
+
+.card {
+  border: none;
+  padding: 10px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+}
+
+.card::after {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.caracteristicaBtn {
+  font-variant: small-caps;
+  font-size: 1.2rem;
+  color: #008f39;
+  background-color: white;
+  border: 2px solid #008f39;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.caracteristicaBtn:hover {
+  background-color: #008f39;
+  color: white;
+}
+
+.heroMotivacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heroMotivacion--h3 {
+  color: #008f39;
+  font-weight: bold;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .heroMotivacion--h3 {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.heroMotivacion--text {
+  font-size: 1.5rem;
+  color: rgba(56, 56, 56, 0.84);
+  margin: auto;
+  width: 85%;
+}
+
+@media screen and (max-width: 768px) {
+  .heroMotivacion--text {
+    padding-bottom: 1rem;
+  }
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
+.mainMotivacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.motivacionTitulo {
+  width: 90%;
+  height: 10%;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+.motivacionTitulo h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10px;
+  color: #008f39;
+  font-weight: bold;
+}
+
+.motivacionTop {
+  width: 90%;
+  height: 30%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  .motivacionTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.motivacionMedium {
+  width: 90%;
+  height: 30%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  .motivacionMedium {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.motivacionLow {
+  width: 90%;
+  height: 30%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  .motivacionLow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.cajaMotivacion {
+  width: 45%;
+  height: 35vh;
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .cajaMotivacion {
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    margin-bottom: 2rem;
+    overflow-y: hidden;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .cajaMotivacion {
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+    margin-bottom: 2rem;
+    overflow-y: hidden;
+  }
+}
+
+.botonMotivacion {
+  padding: 0 20px;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: relative;
+  top: 35%;
+  left: 75%;
+  background-color: #008f39;
+  color: white;
+  font-weight: 800;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.botonMotivacion:hover {
+  color: #008f39;
+  background-color: white;
+}
+
+/* las siguientes clases son imagenes de motivacion */
+.moti1 {
+  background-image: url(../img/motivacion/moti1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.moti2 {
+  background-image: url(../img/motivacion/moti2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.moti3 {
+  background-image: url(../img/motivacion/moti3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.moti4 {
+  background-image: url(../img/motivacion/moti4.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.moti5 {
+  background-image: url(../img/motivacion/moti5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.moti6 {
+  background-image: url(../img/motivacion/moti6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.mainContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#00c9ff), to(#92fe9d));
+  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+}
+
+.mainContacto form {
+  border: 3px solid #008f39;
+  width: 40%;
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  border-radius: 7px;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .mainContacto form {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .mainContacto form {
+    width: 100%;
+  }
+}
+
+.mainContacto form h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+label {
+  padding: 5px;
+}
+
+#enviar {
+  padding: 5px;
+  background-color: #5ffbf1;
+  color: black;
+  font-size: 1.25rem;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  min-width: 100%;
+  max-width: 100%;
+  color: black;
+}
+
+.error {
+  background-color: rgba(255, 255, 255, 0.685);
+  display: -ms-grid;
+  display: grid;
+  grid-area: "img img img" "text text text" "btn btn btn" "chiste chiste chiste";
+  overflow-y: hidden;
+}
+
+.container__Img {
+  grid-area: "img";
+  width: 100%;
+  height: 40%;
+  margin-top: 0;
+  overflow-y: hidden;
+}
+
+.container__text {
+  grid-area: "img";
+  width: 100%;
+  height: 15%;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  font-variant: small-caps;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  text-shadow: #008f39 1px 1px;
+  background-image: url(../img/404/tierra.png);
+  background-size: cover;
+}
+
+.container__Boton {
+  grid-area: "btn";
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__BotonUno:hover {
+  color: #008f39;
+  background-color: white;
+  border: 3px solid #008f39;
+}
+
+.container__BotonDos:hover {
+  color: #5bc0de;
+  background-color: white;
+  border: 3px solid #5bc0de;
+}
+
+.container__chiste {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  margin-top: 3rem;
+}
+/*# sourceMappingURL=main.css.map */

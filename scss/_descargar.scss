@@ -1,0 +1,108 @@
+@import "responsive";
+
+// Descargar
+
+// Hero section
+
+.descargaText {
+  display: flex;
+  margin-right: 0rem !important;
+  &--h2 {
+    color: $verde;
+    font-weight: bold;
+    @include desktop-up(md) {
+      padding-top: 3rem;
+    }
+  }
+  &--text {
+    font-size: 1.5rem;
+    color: rgba(56, 56, 56, 0.84);
+  }
+}
+
+.descargaBtn {
+  display: flex;
+  justify-content: center;
+  @include desktop-up(md) {
+    padding-bottom: 2rem;
+  }
+  &--app {
+    border: 2px solid rgb(26, 165, 248);
+    background-color: rgb(26, 165, 248);
+    color: white;
+    font-variant: small-caps;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 1rem;
+    &:hover {
+      border: 2px solid rgb(26, 165, 248);
+      background-color: white;
+      color: rgb(26, 165, 248);
+    }
+  }
+  &--play {
+    border: 2px solid rgb(164, 198, 57);
+    background-color: rgb(164, 198, 57);
+    color: white;
+    font-variant: small-caps;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 1rem;
+    &:hover {
+      border: 2px solid rgb(164, 198, 57);
+      background-color: white;
+      color: rgb(164, 198, 57);
+    }
+  }
+}
+
+// Tabla de Caracteristicas
+
+.tablaPrecio {
+  margin-top: 5rem;
+  &__row {
+    display: flex;
+    justify-content: space-around;
+    &Uno {
+      overflow: hidden;
+    }
+    &Dos {
+      overflow: hidden;
+    }
+  }
+}
+
+.card {
+  border: none;
+  padding: 10px 50px;
+  display: flex;
+  height: auto;
+}
+
+.card::after {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.caracteristicaBtn {
+  font-variant: small-caps;
+  font-size: 1.2rem;
+  color: $verde;
+  background-color: white;
+  border: 2px solid $verde;
+  padding: 10px;
+  border-radius: 10px;
+  &:hover {
+    background-color: $verde;
+    color: white;
+  }
+}

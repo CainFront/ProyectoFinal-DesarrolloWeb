@@ -1,0 +1,13 @@
+// footer
+
+.footer {
+  background-color: $verde;
+  text-align: center;
+  color: white;
+  margin: auto;
+  &__section {
+    &Btn {
+      margin: 1rem;
+    }
+  }
+}
