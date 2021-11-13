@@ -1,8 +1,6 @@
 @import "responsive";
 
-// Descargar
-
-// Hero section
+// Hero Section
 
 .descargaText {
   display: flex;
@@ -79,18 +77,16 @@
   padding: 10px 50px;
   display: flex;
   height: auto;
-}
-
-.card::after {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.card:hover::after {
-  opacity: 1;
+  &::after {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  &:hover::after {
+    opacity: 1;
+  }
 }
 
 .caracteristicaBtn {

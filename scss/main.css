@@ -814,17 +814,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(#00c9ff), to(#92fe9d));
   background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
 }
@@ -832,7 +827,6 @@
 .mainContacto form {
   border: 3px solid #008f39;
   width: 40%;
-  height: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -843,6 +837,8 @@
   padding: 30px;
   border-radius: 7px;
   background-color: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -860,10 +856,19 @@
 .mainContacto form h2 {
   text-align: center;
   font-size: 2rem;
+  font-weight: bold;
 }
 
-label {
+.mainContacto form label {
   padding: 5px;
+}
+
+.mainContacto form textarea {
+  min-height: 100px;
+  max-height: 200px;
+  min-width: 100%;
+  max-width: 100%;
+  color: black;
 }
 
 #enviar {
@@ -873,12 +878,36 @@ label {
   font-size: 1.25rem;
 }
 
-textarea {
-  min-height: 100px;
-  max-height: 200px;
-  min-width: 100%;
-  max-width: 100%;
-  color: black;
+.form-redes {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-redes__text {
+  color: #008f39;
+}
+
+.form-redes__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+  margin: auto;
+}
+
+.form-redes__icons img {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  background-size: cover;
+  background-position: center;
 }
 
 .error {
