@@ -17,6 +17,9 @@
   align-items: center;
   text-align: center;
   color: white;
+  @include desktop-up(sm) {
+    height: 25rem;
+  }
   &__titulo {
     font-size: 2.5rem;
     font-weight: bold;
@@ -74,6 +77,9 @@
   border-radius: 10px;
   background-color: $carrotInt;
   height: 30rem;
+  @include desktop-up(sm) {
+    height: 32rem;
+  }
 }
 .card-box .card-thumbnail {
   max-height: 200px;
@@ -94,7 +100,8 @@
 }
 
 .textNoticias {
-  height: 6.5rem;
+  height: 7.5rem;
+  overflow-y: hidden;
 }
 
 .btnNoticias {
@@ -118,7 +125,7 @@
   }
 }
 
-// Seccion Equipo Inicio
+// Seccion Equipo
 
 .equipoTitulo {
   font-size: 3rem;
@@ -169,7 +176,7 @@
   }
 }
 
-// Seccion Shock Inicio
+// Seccion Shock
 
 .heroBanner {
   margin-bottom: 5rem;

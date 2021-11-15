@@ -11,9 +11,33 @@
   overflow-x: hidden;
 }
 
+// GENERAL NAVBAR
+
 .custom-toggler {
   border-color: $verde;
   background-image: url(../img/inicio/toggler.png);
   background-size: cover;
   background-position: center;
+  margin: 3px;
+  @include desktop-up(sm) {
+    margin: auto;
+  }
+}
+
+.generalUno {
+  @include desktop-up(md) {
+    margin: auto;
+    width: 80%;
+  }
+}
+
+.generalDos {
+  @include desktop-up(md) {
+    position: relative;
+    left: 33%;
+  }
+  @include desktop-up(sm) {
+    position: unset;
+    margin: auto;
+  }
 }

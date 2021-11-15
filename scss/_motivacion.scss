@@ -1,6 +1,6 @@
 @import "responsive";
 
-// Slider - Hero
+// Hero section y Slider50%
 
 .heroMotivacion {
   display: flex;
@@ -36,133 +36,108 @@
   filter: brightness(70%);
 }
 
-// Cards motivacion
-
-.mainMotivacion {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+// ONG´s motivacion
 
 .motivacionTitulo {
   width: 90%;
   height: 10%;
   margin: auto;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
+  h2 {
+    color: $verde;
+    text-align: center;
+    font-weight: bold;
+  }
 }
 
-.motivacionTitulo h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 10px;
-  color: $verde;
-  font-weight: bold;
-}
-
-.motivacionTop {
+.ong {
   width: 90%;
-  height: 30%;
-  margin: auto;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+  overflow-y: hidden;
   @include desktop-up(md) {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.motivacionMedium {
-  width: 90%;
-  height: 30%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  @include desktop-up(md) {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.motivacionLow {
-  width: 90%;
-  height: 30%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  @include desktop-up(md) {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.cajaMotivacion {
-  width: 45%;
-  height: 35vh;
-  margin: 2rem;
-  border-radius: 10px;
-  @include desktop-up(md) {
-    width: 80%;
-    height: 50vh;
-    margin: auto;
-    margin-bottom: 2rem;
-    overflow-y: hidden;
-  }
-  @include desktop-up(sm) {
     width: 100%;
-    height: 50vh;
-    margin: auto;
-    margin-bottom: 2rem;
-    overflow-y: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &Sub {
+    background-color: $verde;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    @include desktop-up(md) {
+      flex-direction: column;
+      height: 25rem;
+    }
+    &__text {
+      width: 60%;
+      margin-left: 8rem;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      @include desktop-up(md) {
+        width: 95%;
+        margin: auto;
+        text-align: center;
+      }
+      h3 {
+        font-weight: bold;
+        padding-top: 5px;
+        text-decoration: underline;
+        margin-left: 10px;
+        @include desktop-up(md) {
+          padding-bottom: 1rem;
+        }
+      }
+      p {
+        margin-left: 10px;
+      }
+    }
   }
 }
 
-.botonMotivacion {
-  padding: 0 20px;
-  border: 3px solid rgb(0, 0, 0);
-  border-radius: 50%;
-  position: relative;
-  top: 35%;
-  left: 75%;
-  background-color: $verde;
-  color: white;
-  font-weight: 800;
-  font-size: 3rem;
-  text-decoration: none;
-  &:hover {
+.ongBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  &__config {
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: 1.2rem;
     color: $verde;
     background-color: white;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid white;
+    &:hover {
+      color: white;
+      background-color: $verde;
+    }
   }
 }
 
-/* las siguientes clases son imagenes de motivacion */
-
-.moti1 {
-  background-image: url(../img/motivacion/moti1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.moti2 {
-  background-image: url(../img/motivacion/moti2.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.moti3 {
-  background-image: url(../img/motivacion/moti3.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.moti4 {
-  background-image: url(../img/motivacion/moti4.jpeg);
-  background-size: cover;
-  background-position: center;
-}
-.moti5 {
-  background-image: url(../img/motivacion/moti5.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.moti6 {
-  background-image: url(../img/motivacion/moti6.jpg);
-  background-size: cover;
-  background-position: center;
+.ongImg {
+  border-radius: 50%;
+  position: relative;
+  left: 80px;
+  background-color: white;
+  border: 2px solid $verde;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    @include desktop-up(md) {
+      transform: scale(1);
+    }
+  }
+  @include desktop-up(md) {
+    margin: auto;
+    left: 0px;
+    top: 30px;
+  }
 }
